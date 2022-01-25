@@ -1,10 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/Header';
+import DropdownMenu from './components/DropdownMenu';
 
 function App() {
   return (
     <div className="App">
-      <h1>Js Unit Converter</h1>
+      <Header />
+      <DropdownMenu />
     </div>
   );
 }
