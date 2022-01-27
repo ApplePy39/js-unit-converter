@@ -1,11 +1,9 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #3AAfA9;
+  background: #fcfcfc;
 }
 
 code {
@@ -14,11 +12,74 @@ code {
 }
 
 .header-container {
-  margin: 0 auto;
+  display: table;
+  margin: 2rem auto;
 }
 
 .header-text {
   margin: 1rem;
   font-size: xx-large;
-  color: #FEFFFF;
+  color: #333333;
+}
+
+.dropdown {
+  width: 400px;
+  margin: 0 auto;
+  user-select: none;
+  position: relative;
+}
+
+.moved {
+  top: 400px;
+}
+
+.dropdown .dropdown-btn {
+  padding: 15px 20px;
+  background: #ffffff;
+  box-shadow: 3px 3px 10px 6px rgba(0,0,0,0.06);
+  font-weight: bold;
+  color: #333333;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dropdown .dropdown-content {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  padding: 10px;
+  backround: #ffffff;
+  box-shadow: 3px 3px 10px 6px rgba(0,0,0,0.06);
+  font-weight: bold;
+  color: #333333;
+  width: 95%;
+}
+
+.dropdown .dropdown-content .dropdown-item {
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.dropdown .dropdown-content .dropdown-item:hover {
+  background: #f4f4f4;
+}
+
+.output {
+  width: 400px;
+  margin: 800px auto;
+  user-select: none;
+  position: relative;
+}
+
+.input-stuff {
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+  top: 350px;
+  padding: 10px;
+  color: #333333;
+  border: 1px #333333 solid;
 }
