@@ -1,24 +1,14 @@
 import Header from './components/Header';
-import DropdownInput from './components/DropdownInput';
-import DropdownOutput from './components/DropdownOutput';
-import Output from './components/Output';
-import Input from './components/Input';
+import Unit from './components/Unit'
 import { useState } from 'react';
 
 function App() {
-    const [selected, setSelected] = useState("");
-    const [selectedOutput, setSelectedOutput] = useState("");
+    const [number, setNumber] = useState(0);
 
-  return (
+    return (
     <div className="App">
       <Header />
-      <DropdownInput selected={selected} setSelected={setSelected} /><Input />
-      <DropdownOutput style={{ top: "200%" }}
-          selectedOutput={selectedOutput}
-          setSelectedOutput={setSelectedOutput}
-      />
-
-        <Output selected={selected} selectedOutput={selectedOutput}/>
+        <Unit number={number} setNumber={setNumber} />
     </div>
   );
 }

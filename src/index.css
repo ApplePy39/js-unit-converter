@@ -11,6 +11,26 @@ code {
     monospace;
 }
 
+.conversion {
+  background: #ffffff;
+  padding:  30px 10px;
+  width: 50%;
+  display: table;
+  margin: 0 auto;
+  box-shadow: 3px 3px 10px 6px rgba(0,0,0,0.06);
+}
+
+.box-div {
+  display: table;
+  margin: 2rem auto;
+}
+
+.box {
+  padding: 10px 20px;
+  border: #333333 solid 1px;
+  font-size: x-large;
+}
+
 .header-container {
   display: table;
   margin: 2rem auto;
